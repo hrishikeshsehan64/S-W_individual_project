@@ -1,0 +1,187 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 100%);
+            color: #f4e4d4;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #1a0f08, #2c1810);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 3px solid #8b6914;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #d4af37;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #c9b896;
+            font-style: italic;
+        }
+
+        .header-images {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .header-img {
+            width: 80px;
+            height: 80px;
+            filter: brightness(0.9) sepia(0.3) hue-rotate(20deg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .region-divider {
+            text-align: center;
+            margin: 4rem 0 3rem 0;
+            padding: 2rem;
+            background: rgba(139, 105, 20, 0.2);
+            border-radius: 10px;
+        }
+
+        .region-title {
+            font-size: 2.5rem;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+
+        .region-subtitle {
+            color: #c9b896;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        .era-section {
+            background: rgba(42, 28, 20, 0.8);
+            border: 2px solid #8b6914;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .era-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(139, 105, 20, 0.3);
+        }
+
+        h2 {
+            color: #d4af37;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #8b6914;
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        h3 {
+            color: #c9b896;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-card {
+            background: rgba(60, 40, 30, 0.6);
+            border-left: 4px solid #d4af37;
+            padding: 1.5rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-card:hover {
+            background: rgba(80, 60, 50, 0.8);
+            border-left-width: 8px;
+        }
+
+        .year {
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .divider-img {
+            width: 100px;
+            height: 100px;
+            opacity: 0.7;
+        }
+
+        .highlights {
+            background: rgba(80, 60, 50, 0.4);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 5px solid #8b6914;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 2px solid #8b6914;
+            color: #c9b896;
+        }
+
+        .scroll-hint {
+            text-align: center;
+            padding: 1rem;
+            color: #d4af37;
+            font-style: italic;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
